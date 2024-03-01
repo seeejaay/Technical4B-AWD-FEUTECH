@@ -5,8 +5,11 @@
   box-sizing: border-box !important;
   transition: 300ms ease !important;
   font-family: "Poppins", sans-serif;
-  --lightviolet: #6662f7;
-  --lightblue: #5271ff;
+  --darkred: #220c10;
+  --greencyan: #506c64;
+  --mediumcyan: #77cbb9;
+  --cyanblue: #75b8c8;
+  --lightcyanblue: #cdd3d5;
 }
 .navbar {
   position: fixed !important;
@@ -108,19 +111,13 @@
   border-radius: 16px !important;
   box-shadow: 0px 0px 4px 3px rgba(97, 97, 97, 0.68) !important;
   &.card-dark {
-    box-shadow: 0px 0px 4px 3px rgba(102, 98, 247, 0.68) !important;
+    box-shadow: 0px 0px 4px 3px rgba(119, 203, 185, 0.68) !important;
     background: #1f2327;
   }
 
   &:hover {
     transform: scale(1.02);
   }
-}
-.card-title {
-  width: 100% !important;
-  height: 100px;
-  background: linear-gradient(90deg, #2cda9d 0%, #6662f7 100%);
-  border-radius: 10px !important;
 }
 .f-size {
   font-size: clamp(16px, 2vw, 20px) !important;
@@ -144,7 +141,7 @@
       color: #fff;
 
       &:hover {
-        background: #6662f7 !important;
+        background: var(--cyanblue) !important;
       }
     }
   }
@@ -154,10 +151,10 @@
   }
 
   .btn-style {
-    border: 1px solid #6662f7 !important;
+    border: 1px solid var(--cyanblue) !important;
 
     &:hover {
-      background: #6662f7 !important;
+      background-color: var(--cyanblue) !important;
       color: #fff !important;
     }
   }
