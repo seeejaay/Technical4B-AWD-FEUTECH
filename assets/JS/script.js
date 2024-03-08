@@ -157,19 +157,19 @@ btnpop.forEach((button) => {
         break;
       case "shoe5":
         popupimg.innerHTML =
-          '<img src="assets/images/shoe4.png" alt="shoe4" class="img-fluid">';
+          '<img src="assets/images/shoe5.png" alt="shoe5" class="img-fluid">';
         break;
       case "shoe6":
         popupimg.innerHTML =
-          '<img src="assets/images/shoe4.png" alt="shoe4" class="img-fluid">';
+          '<img src="assets/images/shoe6.png" alt="shoe6" class="img-fluid">';
         break;
       case "shoe7":
         popupimg.innerHTML =
-          '<img src="assets/images/shoe4.png" alt="shoe4" class="img-fluid">';
+          '<img src="assets/images/shoe7.png" alt="shoe7" class="img-fluid">';
         break;
       case "shoe8":
         popupimg.innerHTML =
-          '<img src="assets/images/shoe4.png" alt="shoe4" class="img-fluid">';
+          '<img src="assets/images/shoe8.png" alt="shoe8" class="img-fluid">';
         break;
     }
 
