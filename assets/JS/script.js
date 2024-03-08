@@ -124,3 +124,21 @@ newButtonLarge.addEventListener("click", () => {
       : "rotate(0deg)";
   }
 });
+
+const buttons = [".btn-s1", ".btn-s2", ".btn-s3", ".btn-s4"];
+const popups = ["#myPopup1", "#myPopup2", "#myPopup3", "#myPopup4"];
+const mainMenu = document.getElementById("_mainMenu");
+
+buttons.forEach((button, index) => {
+  document.querySelector(button).addEventListener("click", () => {
+    const popup = document.querySelector(popups[index]);
+    popup.classList.toggle("active");
+  });
+});
+
+mainMenu.addEventListener("click", () => {
+  popups.forEach((popup) => {
+    const pop = document.querySelector(popup);
+    pop.classList.remove("active");
+  });
+});

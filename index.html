@@ -52,7 +52,7 @@
             id="navbarNav"
           >
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <li class="nav-item" id="_mainMenu">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Main Menu</a
                 >
@@ -100,8 +100,8 @@
     </main>
 
     <section class="container-fluid container mt-5">
-      <div class="card-group m-2">
-        <div class="card" id="_card">
+      <div class="card-group">
+        <div class="card card-1" id="_card">
           <div class="card-body">
             <div class="card-image p-2">
               <img src="./assets/images/shoe1.png" alt="" class="img-fluid" />
@@ -110,36 +110,21 @@
             <div class="card-text">
               <ul class="list-group">
                 <li class="list-group-item l-item">
-                  Monthly Price <br /><span>₱249</span>
+                  <br /><span>Nike Dunk Low <br />'Light Smoke Grey'</span>
                 </li>
                 <li class="list-group-item l-item">
-                  Video and Sound Quality<br />
-                  <span>Good</span>
+                  <br /><span>₱11,495.00</span>
                 </li>
                 <li class="list-group-item l-item">
-                  Resolution <br />
-                  <span>720p </span>
-                </li>
-                <li class="list-group-item l-item">
-                  Supported Devices <br />
-                  <span>Mobile Phone, Tablet, Computer</span>
-                </li>
-                <li class="list-group-item l-item">
-                  Devices can watch at the same time <br />
-                  <span>1</span>
-                </li>
-                <li class="list-group-item l-item">
-                  Download devices <br />
-                  <span>1</span>
-                </li>
-                <li class="list-group-item l-item">
-                  <button class="btn btn-style">Get Started</button>
+                  <button class="btn btn-style btn-s1" id="_btnS1">
+                    Get Started
+                  </button>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="card" id="_card">
+        <div class="card card-2" id="_card">
           <div class="card-body">
             <div class="card-image p-2">
               <img src="./assets/images/shoe2.png" alt="" class="img-fluid" />
@@ -148,36 +133,21 @@
             <div class="card-text">
               <ul class="list-group">
                 <li class="list-group-item l-item">
-                  Monthly Price <br /><span>₱249</span>
+                  <br /><span>New Balance 550 'White/Castlerock'</span>
                 </li>
                 <li class="list-group-item l-item">
-                  Video and Sound Quality<br />
-                  <span>Good</span>
+                  <br /><span>₱9,995.00</span>
                 </li>
                 <li class="list-group-item l-item">
-                  Resolution <br />
-                  <span>720p </span>
-                </li>
-                <li class="list-group-item l-item">
-                  Supported Devices <br />
-                  <span>Mobile Phone, Tablet, Computer</span>
-                </li>
-                <li class="list-group-item l-item">
-                  Devices can watch at the same time <br />
-                  <span>1</span>
-                </li>
-                <li class="list-group-item l-item">
-                  Download devices <br />
-                  <span>1</span>
-                </li>
-                <li class="list-group-item l-item">
-                  <button class="btn btn-style">Get Started</button>
+                  <button class="btn btn-style btn-s2" id="_btnS2">
+                    Get Started
+                  </button>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="card" id="_card">
+        <div class="card card-3" id="_card">
           <div class="card-body">
             <div class="card-image p-2">
               <img src="./assets/images/shoe3.png" alt="" class="img-fluid" />
@@ -186,30 +156,38 @@
             <div class="card-text">
               <ul class="list-group">
                 <li class="list-group-item l-item">
-                  Monthly Price <br /><span>₱249</span>
+                  <br /><span>adidas Yeezy Boost 350 V2 <br />'Clay'</span>
                 </li>
                 <li class="list-group-item l-item">
-                  Video and Sound Quality<br />
-                  <span>Good</span>
+                  <br /><span>₱14,995.00</span>
                 </li>
                 <li class="list-group-item l-item">
-                  Resolution <br />
-                  <span>720p </span>
+                  <button class="btn btn-style btn-s3" id="_btnS3">
+                    Get Started
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card card-4" id="_card">
+          <div class="card-body">
+            <div class="card-image p-2">
+              <img src="./assets/images/shoe4.png" alt="" class="img-fluid" />
+            </div>
+
+            <div class="card-text">
+              <ul class="list-group">
+                <li class="list-group-item l-item">
+                  <br /><span>adidas Samba OG <br />'Cloud White'</span>
                 </li>
                 <li class="list-group-item l-item">
-                  Supported Devices <br />
-                  <span>Mobile Phone, Tablet, Computer</span>
+                  <br /><span>₱12,495.00</span>
                 </li>
                 <li class="list-group-item l-item">
-                  Devices can watch at the same time <br />
-                  <span>1</span>
-                </li>
-                <li class="list-group-item l-item">
-                  Download devices <br />
-                  <span>1</span>
-                </li>
-                <li class="list-group-item l-item">
-                  <button class="btn btn-style">Get Started</button>
+                  <button class="btn btn-style btn-s4" id="_btnS4">
+                    Get Started
+                  </button>
                 </li>
               </ul>
             </div>
@@ -265,6 +243,30 @@
       </div>
     </footer>
     <script src="./assets/JS/script.js"></script>
+
+    <div id="myPopup1" class="popup">
+      <div class="popup-content">
+        <p>Some text in the Popup 1..</p>
+      </div>
+    </div>
+
+    <div id="myPopup2" class="popup">
+      <div class="popup-content">
+        <p>Some text in the Popup 2..</p>
+      </div>
+    </div>
+
+    <div id="myPopup3" class="popup">
+      <div class="popup-content">
+        <p>Some text in the Popup 3..</p>
+      </div>
+    </div>
+
+    <div id="myPopup4" class="popup">
+      <div class="popup-content">
+        <p>Some text in the Popup 4..</p>
+      </div>
+    </div>
 
     <!--JS BOOTSTRAP-->
     <script
