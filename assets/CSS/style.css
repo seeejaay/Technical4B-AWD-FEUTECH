@@ -197,18 +197,69 @@
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.4);
 
   &.active {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .popup-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  max-width: 600px;
+  border-radius: 20px;
+}
+
+.popup-content {
+  display: flex;
+}
+
+.popup-image {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  padding: 2;
+}
+
+form {
+  width: 50%;
+}
+
+/* Hide the default radio button */
+.btn-group {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) !important;
+  width: 100%;
+  gap: 10px !important;
+  /* Adjust this value as needed */
+}
+
+.btn-check + .lbl {
+  width: 100%;
+  text-align: center; /* Center the labels */
+  border: 1px solid #ccc; /* Add a border */
+  padding: 10px; /* Add some padding */
+  transition: background-color 0.3s ease;
+  border-radius: 0 !important;
+
+  &:hover {
+    background-color: #201f1f !important;
+    color: #fff !important;
+  } /* Add a transition for the background color */
+}
+
+.btn-check:checked + .lbl {
+  background-color: #201f1f !important;
+  color: #fff !important; /* Change the background color when the radio button is checked */
 }

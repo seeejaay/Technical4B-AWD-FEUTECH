@@ -125,20 +125,61 @@ newButtonLarge.addEventListener("click", () => {
   }
 });
 
-const buttons = [".btn-s1", ".btn-s2", ".btn-s3", ".btn-s4"];
-const popups = ["#myPopup1", "#myPopup2", "#myPopup3", "#myPopup4"];
-const mainMenu = document.getElementById("_mainMenu");
+const btnpop = document.querySelectorAll(".btn-pop");
+const popup = document.querySelector("#myPopup1"); // Select the popup
+const mainmenu = document.getElementById("_mainMenu");
 
-buttons.forEach((button, index) => {
-  document.querySelector(button).addEventListener("click", () => {
-    const popup = document.querySelector(popups[index]);
-    popup.classList.toggle("active");
+mainmenu.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+btnpop.forEach((button) => {
+  button.addEventListener("click", () => {
+    const popID = button.dataset.popup;
+    const popupimg = document.querySelector(".popup-image");
+
+    switch (popID) {
+      case "shoe1":
+        popupimg.innerHTML =
+          '<img src="assets/images/shoe1.png" alt="shoe1" class="img-fluid">';
+        break;
+      case "shoe2":
+        popupimg.innerHTML =
+          '<img src="assets/images/shoe2.png" alt="shoe2" class="img-fluid">';
+        break;
+      case "shoe3":
+        popupimg.innerHTML =
+          '<img src="assets/images/shoe3.png" alt="shoe3" class="img-fluid">';
+        break;
+      case "shoe4":
+        popupimg.innerHTML =
+          '<img src="assets/images/shoe4.png" alt="shoe4" class="img-fluid">';
+        break;
+      case "shoe5":
+        popupimg.innerHTML =
+          '<img src="assets/images/shoe4.png" alt="shoe4" class="img-fluid">';
+        break;
+      case "shoe6":
+        popupimg.innerHTML =
+          '<img src="assets/images/shoe4.png" alt="shoe4" class="img-fluid">';
+        break;
+      case "shoe7":
+        popupimg.innerHTML =
+          '<img src="assets/images/shoe4.png" alt="shoe4" class="img-fluid">';
+        break;
+      case "shoe8":
+        popupimg.innerHTML =
+          '<img src="assets/images/shoe4.png" alt="shoe4" class="img-fluid">';
+        break;
+    }
+
+    popup.style.display = "block"; // Display the popup
   });
 });
 
-mainMenu.addEventListener("click", () => {
-  popups.forEach((popup) => {
-    const pop = document.querySelector(popup);
-    pop.classList.remove("active");
-  });
+// Add an event listener to close the popup when the user clicks outside of it
+window.addEventListener("click", (event) => {
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
 });
